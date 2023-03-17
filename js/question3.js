@@ -1,4 +1,4 @@
-console.log("Signal color        " + "Message")
+console.log("%cSignal color        "  + "Message" , "font-weight: bold;")
 do {
     var color1 = prompt("Enter the First color of road traffic signal", "red");
 
