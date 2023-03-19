@@ -1,54 +1,120 @@
-do {
-    var firstNum = +prompt("Enter a First number :" , "5");
-    var operation = prompt("What opertaion do you want to perform: \nFor Example : +, -, *, / or %." , "+");
-    var secondNum = +prompt("Enter a Second number :" , "5");
-
+var firstNum;
+while (isNaN(firstNum)) {
+    firstNum = +prompt("Enter a First number :" , 5);
     if (isNaN(firstNum)) {
         alert("Please Enter only a number, Not an alphabet.");
     }
-    
-    else if (isNaN(secondNum)) {
-        alert("Please Enter only a number, Not an alphabet.");
-    }
+}
 
-    else if (operation !== "+" && operation !== "-" && operation !== "*" && operation !== "/" && operation !== "%") {
-        alert("Enter only +, -, *, /, % ")
-    }
-    else {
-        if (operation == "+") {
-            console.log("First Number : " + firstNum);
-            console.log("Second Number : " + secondNum);
-            console.log("Operation : " + operation);
-            console.log("Result : " + (firstNum + secondNum));
-        }
-
-        else if (operation == "-") {
-            console.log("First Number : " + firstNum);
-            console.log("Second Number : " + secondNum);
-            console.log("Operation : " + operation);
-            console.log("Result : " + (firstNum - secondNum));
-        }
-
-        else if (operation == "*") {
-            console.log("First Number : " + firstNum);
-            console.log("Second Number : " + secondNum);
-            console.log("Operation : " + operation);
-            console.log("Result : " + (firstNum * secondNum));
-        }
-
-        else if (operation == "/") {
-            console.log("First Number : " + firstNum);
-            console.log("Second Number : " + secondNum);
-            console.log("Operation : " + operation);
-            console.log("Result : " + (firstNum / secondNum));
-        }
-
-        else if (operation == "%") {
-            console.log("First Number : " + firstNum);
-            console.log("Second Number : " + secondNum);
-            console.log("Operation : " + operation);
-            console.log("Result : " + (firstNum % secondNum));
-        }
+var operation;
+while (operation !== "+" && operation !== "-" && operation !== "*" && operation !== "/" && operation !== "%") {
+    operation = prompt("What opertion do you want to perform: \nFor Example : +, -, *, / or %.", "+");
+    if (!["+", "-", "*", "/", "%"].includes(operation)) {
+        alert("Enter only +, -, *, /, % ");
     }
 }
-while (isNaN(firstNum) || isNaN(secondNum) || (operation !== "+" && operation !== "-" && operation !== "*" && operation !== "/" && operation !== "%"));
+
+
+var secondNum;
+while (isNaN(secondNum)) {
+    secondNum = +prompt("Enter a Second number :" , 5);
+    if (isNaN(secondNum)) {
+        alert("Please Enter only a number, Not an alphabet.");
+    }
+}
+
+if (operation == "+") {
+    console.log("First Number : " + firstNum);
+    console.log("Second Number : " + secondNum);
+    console.log("Operation : " + operation);
+    console.log("Result : " + (firstNum + secondNum));
+}
+
+else if (operation == "-") {
+    console.log("First Number : " + firstNum);
+    console.log("Second Number : " + secondNum);
+    console.log("Operation : " + operation);
+    console.log("Result : " + (firstNum - secondNum));
+}
+
+else if (operation == "*") {
+    console.log("First Number : " + firstNum);
+    console.log("Second Number : " + secondNum);
+    console.log("Operation : " + operation);
+    console.log("Result : " + (firstNum * secondNum));
+}
+
+else if (operation == "/") {
+    console.log("First Number : " + firstNum);
+    console.log("Second Number : " + secondNum);
+    console.log("Operation : " + operation);
+    console.log("Result : " + (firstNum / secondNum));
+}
+
+else if (operation == "%") {
+    console.log("First Number : " + firstNum);
+    console.log("Second Number : " + secondNum);
+    console.log("Operation : " + operation);
+    console.log("Result : " + (firstNum % secondNum));
+}
+
+
+
+// let firstNum;
+// while (isNaN(firstNum)) {
+//     firstNum = +prompt("Enter a first number:");
+//     if (isNaN(firstNum)) {
+//         alert("Please enter only a number, not an alphabet.");
+//     }
+// }
+
+// let operation;
+// while (operation !== "+" && operation !== "-" && operation !== "*" && operation !== "/" && operation !== "%") {
+//     operation = prompt("What operation do you want to perform? \nFor example: +, -, *, / or %.");
+//     if (!["+","-","*","/","%"].includes(operation)) {
+//         alert("Enter only +, -, *, /, % ");
+//     }
+// }
+
+// let secondNum;
+// while (isNaN(secondNum)) {
+//     secondNum = +prompt("Enter a second number:");
+//     if (isNaN(secondNum)) {
+//         alert("Please enter only a number, not an alphabet.");
+//     }
+// }
+
+// if (operation == "+") {
+//     console.log("First Number: " + firstNum);
+//     console.log("Second Number: " + secondNum);
+//     console.log("Operation: " + operation);
+//     console.log("Result: " + (firstNum + secondNum));
+// }
+
+// else if (operation == "-") {
+//     console.log("First Number: " + firstNum);
+//     console.log("Second Number: " + secondNum);
+//     console.log("Operation: " + operation);
+//     console.log("Result: " + (firstNum - secondNum));
+// }
+
+// else if (operation == "*") {
+//     console.log("First Number: " + firstNum);
+//     console.log("Second Number: " + secondNum);
+//     console.log("Operation: " + operation);
+//     console.log("Result: " + (firstNum * secondNum));
+// }
+
+// else if (operation == "/") {
+//     console.log("First Number: " + firstNum);
+//     console.log("Second Number: " + secondNum);
+//     console.log("Operation: " + operation);
+//     console.log("Result: " + (firstNum / secondNum));
+// }
+
+// else if (operation == "%") {
+//     console.log("First Number: " + firstNum);
+//     console.log("Second Number: " + secondNum);
+//     console.log("Operation: " + operation);
+//     console.log("Result: " + (firstNum % secondNum));
+// }
